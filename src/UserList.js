@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function UserList(props) {
   return (
@@ -14,8 +15,8 @@ function UserList(props) {
         }
       </div>
       <div>
-        <div onClick={props.handlePersonalPage}>선택</div>
-        <div onClick={props.handleMainpage}>뒤로 가기</div>
+        <div>선택</div>
+        <Link to="/">뒤로 가기</Link>
       </div>
     </div>
   )

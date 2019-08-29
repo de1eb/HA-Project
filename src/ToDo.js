@@ -1,5 +1,7 @@
 import React from 'react';
 import UserList from './UserList'
+import { Link } from "react-router-dom";
+
 
 class ToDo extends React.Component {
   constructor(props) {
@@ -25,7 +27,7 @@ class ToDo extends React.Component {
   render() {
     return (
       <div>
-        <div onClick={this.props.handleMainPage}>Home</div>
+        <Link to="/">Home</Link>
         <div>뒤로가기</div>
         <UserList users={this.props.users} handlePersonalPage={this.props.handlePersonalPage} handleUserSelect={this.props.handleUserSelect} />
       </div>
